@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    hr {
+      margin: 0;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+    .headera {
+      text-decoration: none;
+      margin: 5px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .body1 {
+      display: flex;
+      align-items: center;
+    }
+    .introleft {
+      display: inline;
+      width: 50%;
+    }
+    .introleft img {
+      width: 100%;
+      height: auto;
+    }
+    .introright {
+      width: 50%;
+      font-size: 30px;
+      color: #ea91f1;
+    }
+
+    .body2 {
+      display: flex;
+      align-items: center;
+    }
+    .firstleft {
+      width: 50%;
+    }
+    .firstleft img {
+      width: 100%;
+      height: auto;
+    }
+    .firstright {
+      width: 50%;
+    }
+
+    .search {
+      display: flex;
+      border: 1px solid #9e9e9e;
+      border-radius: 50px;
+      width: 25%;
+      margin: 20px 30px;
+    }
+    .search p {
+      width: 100%;
+      display: inline;
+      color: #9e9e9e;
+      font-size: 14px;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .footer1 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px;
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+    }
+    .email {
+      font-weight: bold;
+    }
+    .icon > a > img {
+      width: 30px;
+      height: auto;
+      margin: 5px;
+    }
+    .footer2 {
+      text-align: center;
+      font-size: 10px;
+      padding: 10px;
+    }
+  </style>
+  <style>
+    .firstright h5 {
+      color: #5a5959;
+      margin: 5px 0;
+    }
+    .firstright h4 {
+      display: inline;
+      color: #708dff;
+    }
+    .firstright h3 {
+      margin: 5px 0;
+    }
+    .firstright p {
+      color: #5b5b5b;
+      font-size: 12px;
+      margin: 5px 0;
+      padding: 5px 0;
+    }
+    .firstright a {
+      color: #5b5b5b;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 1px solid #5b5b5b;
+      padding: 5px;
+      margin: 5px 0;
+    }
+    .new {
+      display: inline;
+      color: #fff;
+      background-color: #708dff;
+      border-radius: 50px;
+      padding: 5px;
+    }
+  </style>
+  <style>
+    .outer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    .inner {
+      width: 30%;
+      margin: 10px;
+    }
+    .body4 img {
+      width: 100%;
+      height: auto;
+    }
+    .body4 h5 {
+      color: #5a5959;
+      margin: 5px 0;
+    }
+    .body4 h4 {
+      display: inline;
+      color: #708dff;
+    }
+    .body4 h3 {
+      margin: 5px 0;
+    }
+    .body4 p {
+      color: #5b5b5b;
+      font-size: 12px;
+      margin: 5px 0;
+      padding: 5px 0;
+    }
+    .body4 a {
+      color: #5b5b5b;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 50px;
+      border: 1px solid #5b5b5b;
+      padding: 5px;
+      margin: 5px 0;
+    }
+  </style>
+  <style>
+    @media (max-width: 767px) {
+      .body1 {
+        flex-wrap: wrap;
+      }
+      .introleft {
+        width: 100%;
+      }
+      .introright {
+        width: 100%;
+      }
+
+      .body2 {
+        flex-wrap: wrap;
+      }
+      .firstleft {
+        width: 100%;
+      }
+      .firstright {
+        width: 100%;
+      }
+
+      .search {
+        width: 80%;
+      }
+
+      .inner {
+        width: 100%;
+      }
+
+      .footer1 {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div class="header">
+      <a class="headera" href="">首頁</a>
+      <a class="headera" href="">部落格</a>
+    </div>
+    <div class="body">
+      <div class="body1">
+        <div class="introleft"><img src="./img/001.jpg" alt="" /></div>
+        <div class="introright">
+          <div style="padding: 50px">
+            <h1>BLOG</h1>
+            <h5>全端工程師</h5>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="body2">
+        <div class="firstleft"><img src="./img/002.jpg" alt="" /></div>
+        <div class="firstright">
+          <div style="padding: 20px">
+            <h5>2025/06/01</h5>
+            <h4>#轉職</h4>
+            <h4>#全端工程師</h4>
+            <div class="new">最新文章</div>
+            <h3>楊孟頻｜跨領域轉職全端工程師，打造技術與創意的橋樑</h3>
+            <p>
+              我是楊孟頻，原本在非資訊領域工作，抱著對技術與創造的熱情，毅然決然踏上了全端工程師的轉職之路。從基礎的
+              HTML、CSS、JavaScript 到後端的 C#、ASP.NET
+              MVC、MSSQL，透過持續學習與實作，我逐步累積開發實力。
+              在實務專案中，我參與了前後端整合、資料庫設計與報表模組開發，了解從需求訪談到系統上線的完整流程。
+              這段轉職歷程不只是技能上的蛻變，更是對自我挑戰與持續成長的證明。我相信技術不只是工具，而是實現想法與解決問題的橋樑，未來我也將持續精進，走得更遠。
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="body3">
+        <div class="search">
+          <p>🔍 搜尋您感興趣的文章</p>
+        </div>
+      </div>
+      <div class="body4">
+        <div class="outer">
+          <div class="inner">
+            <img src="./img/202504.jpg" alt="" />
+            <h5>2025/04/03</h5>
+            <h4>#日本</h4>
+            <h4>#四國</h4>
+            <h4>#關西</h4>
+            <h3>日本四國京阪神遊：情侶11日自助行</h3>
+            <p>
+              2025年春天，我和伴侶一起展開了一趟期待已久的11天日本自助旅行，路線涵蓋了四國的自然與藝術、京阪神的文化與美食，從倉敷的古街風情、直島與豐島的藝術洗禮，到京都的古韻與大阪的活力，每一站都充滿驚喜與感動。這是一段屬於我們的慢旅行，也是一次彼此更了解對方的美好旅程。
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+          <div class="inner">
+            <img src="./img/202409.jpg" alt="" />
+            <h5>2024/09/26</h5>
+            <h4>#日本</h4>
+            <h4>#關東</h4>
+            <h3>日本關東樂園遊：姊妹5日自助行</h3>
+            <p>
+              這次和姊妹一起踏上日本關東的5天自助行，主打就是「玩樂園玩到飽」！我們一口氣攻下了東京迪士尼樂園、迪士尼海洋，還特地安排了一天直衝哈利波特影城，沉浸在魔法世界中。每天都在可愛與奇幻中度過，不管是拍照、排隊、買週邊，連腳酸都覺得值得！這真的是一趟讓人少女心爆發、嗨到不行的姐妹旅行！
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+          <div class="inner">
+            <img src="./img/202408.jpg" alt="" />
+            <h5>2024/08/10</h5>
+            <h4>#日本</h4>
+            <h4>#北海道</h4>
+            <h3>日本北海道花海：家族5日跟團旅遊</h3>
+            <p>
+              2024年夏天，我們全家一起參加了北海道的5日花海跟團旅行，行程從富良野、美瑛的繽紛花田開始，一路欣賞大自然的壯麗景色。不只有迷人的薰衣草與彩虹花田，還去了小樽運河、旭山動物園等經典景點，晚上則入住溫泉飯店，泡湯放鬆、療癒身心。美景、美食加上溫泉，這趟旅程真的是全家都滿意的大成功！
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+          <div class="inner">
+            <img src="./img/202404.jpg" alt="" />
+            <h5>2024/03/31</h5>
+            <h4>#韓國</h4>
+            <h4>#釜山</h4>
+            <h3>海雲台到甘川洞：母女的釜山海景日記</h3>
+            <p>
+              這趟9天的釜山母女自助旅行，是我們一起說走就走的小冒險。從廣安里到海雲台，每天都住在看得到海的地方，早晨在海風中散步、晚上一起吃著海鮮鍋聊天，慢慢走、慢慢玩。除了海景，我們還逛了可愛的咖啡廳、傳統市場，也搭地鐵跑遍景點，是一段屬於我們的悠閒又溫馨的旅行時光。
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+          <div class="inner">
+            <img src="./img/202307-1.jpg" alt="" />
+            <h5>2023/06/29</h5>
+            <h4>#日本</h4>
+            <h4>#關東</h4>
+            <h3>日本關東東京全攻略：母女十日悠遊之旅</h3>
+            <p>
+              這趟十天的東京自助旅行，是我和媽媽一起完成的小夢想。從熱鬧繁華的新宿、澀谷、池袋，到充滿下町風情的淺草、上野、谷中，再一路走到時尚又寧靜的代官山、自由之丘，我們幾乎把東京每個角落都踏遍。
+              每天穿梭在不同城市的氛圍中，有時是百貨購物、有時是老街散步，還有一起在便利商店挑宵夜的日常片刻。
+              這不只是一趟旅行，更是一段專屬於我們母女的回憶，溫暖又珍貴。
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+          <div class="inner">
+            <img src="./img/201903.jpg" alt="" />
+            <h5>2019/03/30</h5>
+            <h4>#日本</h4>
+            <h4>#九州</h4>
+            <h3>與媽媽與外婆的櫻花回憶：日本南九州五日賞花之旅</h3>
+            <p>
+              這趟南九州五日跟團賞櫻旅行，是我和媽媽、外婆難得的三代女子旅行。從鹿兒島到宮崎，沿途櫻花盛開，美得讓人屏息。我們一起漫步在櫻花樹下，拍照、賞景、吃著道地日式便當，感受春天的氣息和家人相伴的幸福。
+              外婆笑說這是她第一次看到這麼多櫻花，而媽媽則感動地說，有女兒陪著走走看看真好。旅行雖短，但留下的是三代人難忘的共同回憶，溫柔又美好。
+            </p>
+            <a href="">閱讀內文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="footer">
+      <div class="footer1">
+        <div class="email">mengping0110@gmail.com</div>
+        <div class="icon">
+          <a href="https://line.me/ti/p/FMj3oHRPJa"
+            ><img src="https://img.icons8.com/ios7/600/line-me.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/mengping0110/"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/4922/4922972.png"
+              alt=""
+          /></a>
+          <a href="https://www.facebook.com/yabi.rabbit/about"
+            ><img
+              src="https://img.icons8.com/ios_filled/512/facebook-new.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="footer2">© 2025 Meng-Ping Yang. All rights reserved.</div>
+    </div>
+  </body>
+</html>
